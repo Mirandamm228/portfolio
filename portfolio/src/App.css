@@ -1,0 +1,11 @@
+body {
+    background-color: #000033;
+}
+
+.Shadow {
+    border: 3px solid yellow; 
+    /* width: 100%;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 0 25px 50px#00001a; */
+}
