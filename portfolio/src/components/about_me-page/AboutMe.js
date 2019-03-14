@@ -1,6 +1,8 @@
 import React from 'react';
 import Nav from '../nav/Nav';
 
+//do I need this?
+
 class AboutMe extends React.Component{
     render(){
         return(
