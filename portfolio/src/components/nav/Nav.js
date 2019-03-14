@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Contact from '../contact-page/Contact';
 import LandingPage from '../landing-page/LandingPage';
 import Projects from '../projects-page/Project';
+import AboutMe from '../aboutme-page/AboutMe';
 
 import './Nav.css';
 
@@ -11,23 +12,23 @@ class Nav extends React.Component{
         return(
             <Router>
                 <div>
-                    <nav className="navbar sticky-bottom navbar-expand-lg navbar-light bg-light">
-                        <Link className="navbar-brand" to="/">
-                            <img src="../../images/personal-logo-v1.png" alt=""/>
-                        </Link>
+                    <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarText">
                             <ul className="navbar-nav mr-auto">
                             <li className="nav-item active">
-                                <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span> </Link>
+                                <Link className="nav-link" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/contact">Contact</Link>
+                                <Link className="nav-link" to="/aboutme">About</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/projects">Projects</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/contact">Contact</Link>
                             </li>
                             </ul>
                             <span className="navbar-text">
@@ -37,8 +38,9 @@ class Nav extends React.Component{
                     </nav>
 
                     <Route exact path ="/" component={LandingPage}/>
-                    <Route path="/contact" component={Contact}/>
+                    <Route path="/aboutme" component={AboutMe}/>
                     <Route path="/projects" component={Projects} />
+                    <Route path="/contact" component={Contact}/>
                 </div>
             </Router>
         );
