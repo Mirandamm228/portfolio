@@ -4,7 +4,7 @@ class Projects extends React.Component{
     render(){
         return(
             <div>
-                <h1>This is the Projects page</h1>
+                <h1 className="white">This is the Projects page</h1>
                 {/* A carousel will go here of the different projects */}
             </div>
         );
