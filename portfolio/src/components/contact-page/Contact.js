@@ -1,5 +1,10 @@
 import React from 'react';
+import axios from 'axios';
 import './Contact.css';
+//still in progress
+//needs to scrub inputs and set up validation with regex
+
+const API_PATH = 'http://localhost:3000/portfolio/api/contact/index.php';
 
 class Contact extends React.Component{
     constructor(props){
@@ -15,12 +20,30 @@ class Contact extends React.Component{
 
     handleFormSubmit(event){
         event.preventDefault();
+        axios({
+            method: 'post',
+            url: `${API_PATH}`,
+            headers: {'content-type': 'application/json'},
+            data: this.state
+        })
+            .then(result => {
+                this.setState({
+                    mailSent: result.data.sent
+                })
+            })
+            .catch(error => this.setState({error: error.message}))
         console.log(this.state);
     }
 
     render(){
         return(
             <div>
+                <div>
+                    {this.state.mailSent &&
+                        <div>Thank you for contacting me.</div>
+                    }
+                </div>
+                
                 <div className="card m-5 white">
                     <h2 className="card-header text-center">Contact Me</h2>
                     <div className="card-body">
