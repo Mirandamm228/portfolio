@@ -1,3 +1,7 @@
+body {
+    color: #0a001a;
+}
+
 h1, h2, h3 {
     color: #7c7cb6;
 }
@@ -13,6 +17,10 @@ p {
 .card-margin {
     margin-top: 35%;
     margin-bottom: 35%;
+}
+
+.card-header {
+    background-image: linear-gradient( #0a001a, #000000);
 }
 
 @media screen and (min-width: 768px) { 

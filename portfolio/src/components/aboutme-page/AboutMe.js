@@ -7,7 +7,7 @@ class AboutMe extends React.Component{
             <div>
                 <div className="card card-margin">
                     <div className="card-header">
-                        <h1 className="card-title text-center">Miranda Manriquez | Web Developer</h1>
+                        <h1 className="card-title text-center emphasis-color">Miranda Manriquez | Web Developer</h1>
                     </div>
                     <div className="card-body">
                         <div className="container"> 

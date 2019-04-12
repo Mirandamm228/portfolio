@@ -1,6 +1,5 @@
 .landingPage-image {
     background-image: url("../../images/ramiro-mendes-237525-unsplash.jpg");
-    /* background-repeat: no-repeat; */
     background-attachment: fixed;
     background-position-x: 50%;
     background-position-y: 48%;
@@ -22,9 +21,9 @@
 @media screen and (min-width: 768px) and (max-width: 991px){
 
     .landingPage-image {
-        background-image: url("../../images/ramiro-mendes-237525-unsplash.jpg");
+        /* background-image: url("../../images/ramiro-mendes-237525-unsplash.jpg");
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: fixed; */
         background-position-x: 50%;
         background-position-y: 53%;
         height: 89.9vh;

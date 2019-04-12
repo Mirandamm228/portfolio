@@ -7,7 +7,7 @@ class Contact extends React.Component{
         return(
             <div>
                 <div className="card text-center card-margin">
-                    <div className="card-header m-3">
+                    <div className="card-header p-4">
                         <h1>Contact Me</h1>
                     </div>
                     <div className="card-body m-5">
@@ -19,8 +19,8 @@ class Contact extends React.Component{
                                     <h5 className="card-text">Best method of contact: Email</h5>
                                 </div>
                                 <div className="col">
-                                    <h5 className="card-text"><i className="far fa-envelope"></i> miranda.manriquez.dev@gmail.com</h5>
-                                    <h5 className="card-text"><i className="fas fa-mobile-alt"></i> (480) 249 - 5816</h5>
+                                    <h5 className="card-text emphasis-color"><i className="far fa-envelope"></i> miranda.manriquez.dev@gmail.com</h5>
+                                    <h5 className="card-text emphasis-color"><i className="fas fa-mobile-alt"></i> (480) 249 - 5816</h5>
                                     <a href="https://www.instagram.com/miranda_webdev/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram fa-3x m-2"></i></a>
                                     <a href="https://www.linkedin.com/in/miranda-manriquez-developer/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin fa-3x m-2"></i></a>
                                     <a href="https://github.com/Mirandamm228" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square fa-3x m-2"></i></a>

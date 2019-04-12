@@ -19,16 +19,16 @@ class Nav extends React.Component{
                         <div className="collapse navbar-collapse" id="navbarText">
                             <ul className="navbar-nav mr-auto">
                             <li className="nav-item active">
-                                <Link className="nav-link" to="/">Home</Link>
+                                <Link className="nav-link" aria-label="Home" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/aboutme">About</Link>
+                                <Link className="nav-link" aria-label="About" to="/aboutme">About</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/projects">Projects</Link>
+                                <Link className="nav-link" aria-label="Projects" to="/projects">Projects</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/contact">Contact</Link>
+                                <Link className="nav-link" aria-label="Contact" to="/contact">Contact</Link>
                             </li>
                             </ul>
                             <span className="navbar-text">
