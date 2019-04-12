@@ -1,71 +1,34 @@
 import React from 'react';
-import axios from 'axios';
-import './Contact.css';
-//still in progress
-//needs to scrub inputs and set up validation with regex
-
-const API_PATH = 'http://localhost:3000/portfolio/api/contact/index.php';
 
 class Contact extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            name: '',
-            email: '',
-            message: '',
-            messageSent: false,
-            error: null
-        }
-    }
-
-    handleFormSubmit(event){
-        event.preventDefault();
-        axios({
-            method: 'post',
-            url: `${API_PATH}`,
-            headers: {'content-type': 'application/json'},
-            data: this.state
-        })
-            .then(result => {
-                this.setState({
-                    mailSent: result.data.sent
-                })
-            })
-            .catch(error => this.setState({error: error.message}))
-        console.log(this.state);
-    }
+   
 
     render(){
         return(
             <div>
-                <div>
-                    {this.state.mailSent &&
-                        <div>Thank you for contacting me.</div>
-                    }
-                </div>
-                
-                <div className="card m-5 white">
-                    <h2 className="card-header text-center">Contact Me</h2>
-                    <div className="card-body">
-                        <form >
-                            <div className="form-group">
-                                <label htmlFor="yourName" className="text-left card-text"><h4>Name: </h4></label>
-                                <input name="yourName" className="form-control" placeholder="Your Name"
-                                    onChange={event => this.setState({name: event.target.value})}/>
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="email" className="text-left card-text"><h4>Email: </h4></label>
-                                <input name="email" className="form-control" placeholder="Your Email"
-                                    onChange={event => this.setState({email: event.target.value})}/>
-                            </div>
-                            <div className="form-group"> 
-                                <label htmlFor="message" className="text-left card-text"><h4>Message: </h4></label>
-                                <input name="message" className="form-control" placeholder="Information about yourself, reason for contact, and a call back number!"
-                                    onChange={event => this.setState({message: event.target.value})}/>
-                            </div>
-                            <button type="submit" className="btn btn-primary" onClick={event => this.handleFormSubmit(event)}>Submit</button>
-                        </form>
+                <div className="card text-center card-margin">
+                    <div className="card-header m-3">
+                        <h1>Contact Me</h1>
                     </div>
+                    <div className="card-body m-5">
+                        <div className="container mb-5">
+                            <div className="row">
+                                <div className="col">
+                                    <h4 className="card-text">Please reach out if you have any further questions!</h4>
+                                    <h5 className="card-text">Hours: 9am - 6pm Arizona Time</h5>
+                                    <h5 className="card-text">Best method of contact: Email</h5>
+                                </div>
+                                <div className="col">
+                                    <h5 className="card-text"><i className="far fa-envelope"></i> miranda.manriquez.dev@gmail.com</h5>
+                                    <h5 className="card-text"><i className="fas fa-mobile-alt"></i> (480) 249 - 5816</h5>
+                                    <a href="https://www.instagram.com/miranda_webdev/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram fa-3x m-2"></i></a>
+                                    <a href="https://www.linkedin.com/in/miranda-manriquez-developer/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin fa-3x m-2"></i></a>
+                                    <a href="https://github.com/Mirandamm228" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square fa-3x m-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         );

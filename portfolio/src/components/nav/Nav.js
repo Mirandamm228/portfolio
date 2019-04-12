@@ -11,7 +11,7 @@ class Nav extends React.Component{
     render(){
         return(
             <Router>
-                <div>
+                <div className="transparent-background">
                     <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>

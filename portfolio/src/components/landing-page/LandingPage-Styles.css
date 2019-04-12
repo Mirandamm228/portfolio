@@ -1,3 +1,71 @@
-p.white {
-    color: white;
+.landingPage-image {
+    background-image: url("../../images/ramiro-mendes-237525-unsplash.jpg");
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-position-x: 50%;
+    background-position-y: 48%;
+    height: 100vh;
+    padding: 2%;
 }
+
+.landingPage-header {
+    font-size: 3.2em;
+    font-weight: 700;
+}
+
+.txt-sm {
+    font-size: 1.5em;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+    .landingPage-image {
+        background-image: url("../../images/ramiro-mendes-237525-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position-x: 50%;
+        background-position-y: 53%;
+        height: 89.9vh;
+    }
+   
+    .vertical-align {
+        padding-top: 6%;
+        padding-right: 9%;;
+    }
+
+    .landingPage-header {
+        font-size: 4em;
+        font-weight: 700;
+    }
+  }
+
+  @media screen and (min-width: 991px) and (max-width: 1024px){ 
+    .landingPage-image {
+        background-position-x: 50%;
+        background-position-y: 67%;
+        height: 89.9vh;
+    }
+
+    .vertical-align {
+        padding-top: 6%;
+        padding-right: 5%;;
+    }
+   
+  }
+
+  
+  @media screen and (min-width: 1024px){ 
+    .landingPage-image {
+        background-position-x: 50%;
+        background-position-y: 48%;
+        height: 89.9vh;
+    }
+
+    .vertical-align {
+        padding-top: 6%;
+        padding-right: 9%;;
+    }
+   
+  }
