@@ -25,7 +25,7 @@ class Projects extends React.Component{
     render(){
         return(
             <div>
-                <div className="projects-container m-5">
+                <div className="projects-container">
                     <div className="card-columns">
                         {this.state.repos.map(repo => (
                             <IndividualProject key={repo.id} repo={repo}/>

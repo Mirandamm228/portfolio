@@ -15,28 +15,42 @@ p {
     color: #004a99;
 }
 
-.card-margin {
-    margin-top: 35%;
-    margin-bottom: 35%;
+.card-padding {
+    padding-top: 15%;
+    padding-bottom: 10%;
 }
 
-.card-header {
-    background-image: linear-gradient( #0a001a, #000000);
+@media screen and (min-width: 411px){
+    .card-margin {
+        margin-top: 10%;
+    }
 }
 
 @media screen and (min-width: 768px) { 
+    .card-padding {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+}
+
+
+@media screen and (min-width: 990px) and (max-width: 1024px){ 
+    .card-padding {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
     .card-margin {
-        margin-top: 12%;
-        margin-bottom: 15%;
+        margin-top: 5%;
     }
 }
 
 @media screen and (min-width: 1064px) {
-
     .card-margin {
         margin-top: 5%;
-        margin-bottom: 0;
     }
 
-
+    .card-padding {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
 }
