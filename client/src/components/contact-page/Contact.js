@@ -15,7 +15,7 @@ class Contact extends React.Component{
                         <div className="container">
                             <div className="row">
                                 <div className="col-sm-12 col-md-12 col-lg-12 col-xl-6 card-padding">
-                                    <h4 className="card-text">Please reach out if you have any further questions!</h4>
+                                    <h4 className="card-text">Please give me a name and a callback number. Let me know how I can help you! </h4>
                                     <h5 className="card-text">Hours: 9am - 6pm Arizona Time</h5>
                                     <h5 className="card-text">Best method of contact: Email</h5>
                                 </div>
