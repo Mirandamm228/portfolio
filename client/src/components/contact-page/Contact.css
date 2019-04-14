@@ -1,6 +1,56 @@
-@media screen and (min-width: 411px){
-    .email-txt-sm {
-        font-size: 1.8em;
-    }
+.contactPage {
+    padding: 1em;
 }
 
+.contactPage h5 {
+    font-size: 3vh;
+}
+
+.contactPage > .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+}
+
+.speech-bubble--div {
+    grid-column: 1 / 2;
+}
+
+.contactPage > .grid > .misc-info--div {
+    grid-column: 1 / 2;
+}
+
+.contactPage > .grid > .contact-info--div {
+    grid-column: 1 / 2;
+}
+
+.far.fa-envelope,
+.fas.fa-mobile-alt {
+    font-size: 5em;
+    margin-bottom: .3em;
+}
+
+.contact-info--div .inner-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+}
+
+@media screen and (min-width: 1064px){
+    .contactPage {
+        padding: 2em;
+    }
+
+    .contact-info--div .inner-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1em;
+    }
+
+    .social-media--div {
+        margin-top: 2em;
+    }
+}

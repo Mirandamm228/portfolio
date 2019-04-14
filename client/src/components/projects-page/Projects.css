@@ -1,7 +1,14 @@
-.projects-container {
-   padding: 5%;
+.projectsPage {
+   padding: .5em;
 }
 
-/* .project-card {
-   font-size: 1.3em
-} */
+.projects-container > div {
+   color: #333;
+}
+
+@media screen and (min-width: 321px) {
+   .projectsPage {
+      padding: 2em;
+   }
+   
+}
