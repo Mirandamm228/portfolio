@@ -1,7 +1,3 @@
-.projects-container {
-   padding: 5%;
+.projects-container > div {
+   color: #333;
 }
-
-/* .project-card {
-   font-size: 1.3em
-} */
