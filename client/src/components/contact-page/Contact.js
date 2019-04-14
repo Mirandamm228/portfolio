@@ -16,18 +16,24 @@ class Contact extends React.Component{
 
     render(){
         return(
-            <div>
-                <div>
-                    <h4>Please give me a name and a callback number. Let me know how I can help you! </h4>
-                    <h5>Hours: 9am - 6pm Arizona Time</h5>
-                    <h5>Best method of contact: Email</h5>
-                </div>
-                <div>
-                    <h5><i className="far fa-envelope"></i> miranda.manriquez.dev@gmail.com</h5>
-                    <h5><i className="fas fa-mobile-alt"></i> (480) 249 - 5816</h5>
-                    <a href="https://www.instagram.com/miranda_webdev/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram fa-3x m-2"></i></a>
-                    <a href="https://www.linkedin.com/in/miranda-manriquez-developer/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin fa-3x m-2"></i></a>
-                    <a href="https://github.com/Mirandamm228" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square fa-3x m-2"></i></a>
+            <div className="contactPage">
+                <div className="grid">
+                    {/* <div>
+                        <i class="far fa-comment"></i>
+                    </div> */}
+                    <div className="misc-info--div text-center">
+                        <p>Please give me a name and a callback number. Let me know how I can help you! </p>
+                        <br />
+                        <h5>Hours: 9am - 6pm Arizona Time</h5>
+                        <h5>Best method of contact: Email</h5>
+                    </div>
+                    <div className="contact-info--div text-center">
+                        <h5><i className="far fa-envelope"></i> miranda.manriquez.dev@gmail.com</h5>
+                        <h5><i className="fas fa-mobile-alt"></i> (480) 249 - 5816</h5>
+                        <a href="https://www.instagram.com/miranda_webdev/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram fa-3x m-2"></i></a>
+                        <a href="https://www.linkedin.com/in/miranda-manriquez-developer/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin fa-3x m-2"></i></a>
+                        <a href="https://github.com/Mirandamm228" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-square fa-3x m-2"></i></a>
+                    </div>
                 </div>
             </div>
         );

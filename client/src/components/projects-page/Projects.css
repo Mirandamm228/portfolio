@@ -1,3 +1,14 @@
+.projectsPage {
+   padding: .5em;
+}
+
 .projects-container > div {
    color: #333;
+}
+
+@media screen and (min-width: 321px) {
+   .projectsPage {
+      padding: 2em;
+   }
+   
 }

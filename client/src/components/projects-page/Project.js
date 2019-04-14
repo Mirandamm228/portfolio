@@ -24,7 +24,7 @@ class Projects extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className="projectsPage">
                 <div className="projects-container p-2">
                     <div className="card-columns">
                         {this.state.repos.map(repo => (

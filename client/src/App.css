@@ -11,3 +11,7 @@ html, body, body > #root {
     width: 100%;
     color: #fff;
 }
+
+p {
+    font-size: 1.3em;
+}

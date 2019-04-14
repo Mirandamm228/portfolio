@@ -1,0 +1,18 @@
+.contactPage {
+    padding: 1.5em;
+}
+
+.contactPage > .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+}
+
+.misc-info--div {
+    grid-column: 1 / 2;
+}
+
+.contact-info--div {
+    grid-column: 1 / 2;
+}

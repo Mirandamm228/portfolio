@@ -11,12 +11,12 @@ class AboutMe extends React.Component{
                     </div>
 
                     <div className="skills-div">
-                        <p>I've worked with a variety of JavaScript technologies like React, Redux, Node, Express, Mongo, Ionic, jQuery, CSS, and Angular. </p>
+                        <p>I've worked with a variety of JavaScript technologies like React, Redux, Node, Express, MongoDB, Ionic, jQuery, CSS, and Angular. My interests include learning more programming languages such as Java, PHP, and C#. Primarily, I am a front end developer. In 5 years, I want to be full stack and helping small business get an edge on the competition against larger companies by providing a quality website.</p>
                         <a href="/projects" aria-label=""><button className="btn btn-secondary btn-lg btn-block" aria-label="View Projects">View Projects</button></a>
                     </div>
                     
                     <div className="your-face">
-                        <img className="rounded img-fluid" src="https://avatars2.githubusercontent.com/u/35352672?s=460&v=4" alt=''/>
+                        <img className="rounded img-fluid" src="https://instagram.fphx1-2.fna.fbcdn.net/vp/026ed7fe89b952072837f4441d8d5e43/5D48E1A9/t51.2885-19/s320x320/56702428_1188607167981799_5791833827529719808_n.jpg?_nc_ht=instagram.fphx1-2.fna.fbcdn.net" alt=''/>
                     </div>
 
                     <div className="bio-div">

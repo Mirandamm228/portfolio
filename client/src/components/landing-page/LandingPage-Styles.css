@@ -28,7 +28,7 @@ h1, h3 {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1023px) {
     .landingPage > .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -46,5 +46,9 @@ h1, h3 {
 
     .landingPage-txt {
         margin: auto;
+    }
+
+    h1, h3 {
+        font-size: 2.5em;
     }
 }

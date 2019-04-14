@@ -1,3 +1,7 @@
+.aboutme {
+    padding: 1.5em;
+}
+
 .aboutme > .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -19,6 +23,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .aboutme {
+        padding: 3em;
+    }
+
     .aboutme > .grid {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2em;
@@ -40,7 +48,6 @@
 
     .aboutme > .grid > .contact-div {
         grid-column: 3 / 4;
-        align-self: center;
     }
     
     .aboutme > .grid > .bio-div {
