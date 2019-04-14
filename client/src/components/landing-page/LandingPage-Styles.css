@@ -1,48 +1,54 @@
-.landingPage-image {
-    background-image: url("../../images/ramiro-mendes-237525-unsplash.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position-x: 50%;
-    background-position-y: 48%;
-    height: 100vh;
-    /* padding: 2%; */
+.landingPage > .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
 }
 
-.landingPage-header {
+.landingPage > .grid > .lmd-monitor--div {
+    margin: auto;
+    grid-column: 1 / 2;
+}
+
+.landingPage > .grid > .landingPage-txt {
+    grid-column: 1 / 2;
+}
+
+.landingPage {
+    padding: 1em;
+}
+
+h1, h3 {
     font-size: 3em;
-    font-weight: 700;
-}
-
-.vertical-align {
-    padding: 10%;
-} 
-
-.txt-sm {
-    font-size: 1.3em;
 }
 
 @media screen and (min-width: 768px) {
-    .txt-sm {
-        font-size: 1.3em;
+    .lmd-monitor--div {
+        width: 55%;
     }
 }
-  
-  @media screen and (min-width: 1023px){ 
-    .landingPage-image {
-        background-image: url("../../images/ramiro-mendes-237525-unsplash.jpg");
-        background-attachment: fixed;
-        background-size: cover;
-        background-position-x: 50%;
-        background-position-y: 50%;
-        height: 100vh;
+
+@media screen and (min-width: 1023px) {
+    .landingPage > .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1em;
     }
 
-    .landingPage-header {
-        font-size: 4em;
-        font-weight: 700;
+    .landingPage > .grid > .landingPage-txt {
+        grid-column: 2 / 3;
     }
 
-    .txt-sm {
-        font-size: 2em;
+    .lmd-monitor--div {
+        width: 90%;
     }
-  } 
+
+    .landingPage-txt {
+        margin: auto;
+    }
+
+    h1, h3 {
+        font-size: 2.5em;
+    }
+}

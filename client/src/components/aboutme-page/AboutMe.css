@@ -1,49 +1,56 @@
-.grid {
+.aboutme {
+    padding: 1.5em;
+}
+
+.aboutme > .grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 1em;
 }
 
-.skills-div {
+.aboutme > .grid > .skills-div {
     grid-row: 3 / 4;
 }
 
-.your-face {
+.aboutme > .grid > .your-face {
     margin: auto;
     grid-row: 2 / 3;
 }
 
-.btn-block {
+.aboutme > .grid > .btn-block {
     width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-    .grid {
+    .aboutme {
+        padding: 3em;
+    }
+
+    .aboutme > .grid {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2em;
     }
 
-    .header-div {
+    .aboutme > .grid > .header-div {
         grid-column: 1 / 4;
     }
 
-    .skills-div {
+    .aboutme > .grid > .skills-div {
         grid-column: 1 / 3;
         grid-row: 2 / 3;
         align-self: center;
     }
 
-    .your-face {
+    .aboutme > .grid > .your-face {
         grid-column: 3 / 4;
     }
 
-    .contact-div {
+    .aboutme > .grid > .contact-div {
         grid-column: 3 / 4;
-        align-self: center;
     }
     
-    .bio-div {
+    .aboutme > .grid > .bio-div {
         grid-column: 1 / 3;
     }
 }

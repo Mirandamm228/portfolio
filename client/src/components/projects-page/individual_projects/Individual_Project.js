@@ -1,11 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
 
-//rendering out a card with name, desc, html_url using axios to github api endpoint
-//https://api.github.com/users/mirandamm228/repos
-//Maybe just have this in the "projects" component
-//use array in portfolio to loop through array, then uuse props to pass information to the individual projects
-
 const IndividualProject = (props) => (
     
         <div>
