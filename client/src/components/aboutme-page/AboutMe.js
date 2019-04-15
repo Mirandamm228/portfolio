@@ -12,7 +12,7 @@ class AboutMe extends React.Component{
 
                     <div className="skills-div">
                         <p>I've worked with a variety of JavaScript technologies like React, Redux, Node, Express, MongoDB, Ionic, jQuery, CSS, and Angular. My interests include learning more programming languages such as Java, PHP, and C#. Primarily, I am a front end developer. In 5 years, I want to be full stack and helping small business get an edge on the competition against larger companies by providing a quality website.</p>
-                        <a href="/projects" aria-label=""><button className="btn btn-secondary btn-lg btn-block" aria-label="View Projects">View Projects</button></a>
+                        <a href="/projects" aria-label=""><button className="btn btn-primary btn-lg btn-block" aria-label="View Projects">View Projects</button></a>
                     </div>
                     
                     <div className="your-face">
