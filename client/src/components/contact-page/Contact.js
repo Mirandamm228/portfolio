@@ -16,7 +16,7 @@ class Contact extends React.Component{
 
     render(){
         return(
-            <div className="contactPage">
+            <div className="contactPage fadeIn">
                 <div className="grid">
                     <div className="speech-bubble--div text-center">
                         <i className="far fa-comment fa-9x"></i>

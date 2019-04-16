@@ -10,7 +10,7 @@ class LandingPage extends React.Component{
                         <img src={require('../../images/lmd-monitor.png')} className="lmd-monitor img-fluid" alt=""/>
                     </div>
                     
-                    <div className="landingPage-txt text-center ">
+                    <div className="landingPage-txt text-center fadeIn">
                         <h1>You need a developer who is</h1>
                         <h3>determined, a problem solver, always improving, and honest... <br />Look no further!</h3>
                         <a href="/aboutme" aria-label=""><button className="btn btn-primary btn-lg mt-3" aria-label="Learn more">Learn more</button></a>
