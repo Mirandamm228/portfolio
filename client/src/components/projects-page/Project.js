@@ -37,6 +37,7 @@ class Projects extends React.Component{
                 </div>
                 <hr />
                 <div className="projects-container p-2">
+                    <h2 className="Project--other-header">Other Projects</h2>
                     <div className="card-columns">
                         {this.state.repos.map(repo => (
                            repo.name !== "portfolio" ? <IndividualProject key={repo.id} repo={repo} /> : false

@@ -7,7 +7,8 @@
    color: #333;
 }
 
-.Project--section-header {
+.Project--section-header,
+.Project--other-header {
    text-align: center;
 }
 
