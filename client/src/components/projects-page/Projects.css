@@ -2,8 +2,17 @@
    padding: .5em;
 }
 
-.projects-container > div {
+.projects-container > div,
+.Project--deployed-section .deployed-card {
    color: #333;
+}
+
+.Project--section-header {
+   text-align: center;
+}
+
+.deployed-card img {
+   width: 100%;
 }
 
 @media screen and (min-width: 321px) {

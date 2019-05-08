@@ -11,7 +11,7 @@ class AboutMe extends React.Component{
                     </div>
 
                     <div className="skills-div fadeIn">
-                        <p>I've worked with a variety of JavaScript technologies like React, Redux, Node, Express, MongoDB, Ionic, jQuery, CSS, and Angular. My interests include learning more programming languages such as Java, PHP, and C#. Primarily, I am a front end developer. In 5 years, I want to be full stack and helping small business get an edge on the competition against larger companies by providing a quality website.</p>
+                        <p>I've worked with a variety of JavaScript technologies like React, Redux, Node, Express, MongoDB, jQuery, and CSS. My interests include learning more programming languages such as Java, PHP, and C#. Primarily, I am a front end developer. In 5 years, I want to be full stack and helping small businesses get an edge on the competition against larger companies by providing a quality website.</p>
                         <a href="/projects" aria-label=""><button className="btn btn-primary btn-lg btn-block" aria-label="View Projects">View Projects</button></a>
                     </div>
                     

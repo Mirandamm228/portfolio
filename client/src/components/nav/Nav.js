@@ -5,9 +5,21 @@ import LandingPage from '../landing-page/LandingPage';
 import Projects from '../projects-page/Project';
 import AboutMe from '../aboutme-page/AboutMe';
 
+
 import './Nav.css';
 
 class Nav extends React.Component{
+    toggleHandler = () => {
+        const ariaExpanded = document.getElementsByClassName("navbar-toggle")[0].getAttribute("aria-expanded").value;
+        console.log(ariaExpanded);
+     
+            if(ariaExpanded){
+                 document.getElementsByClassName("navbar-toggle")[0].toggle(true);
+            }
+
+        
+    }
+
     render(){
         return(
             <Router>
@@ -18,17 +30,17 @@ class Nav extends React.Component{
                         </button>
                         <div className="collapse navbar-collapse" id="navbarText">
                             <ul className="navbar-nav mr-auto">
-                            <li className="nav-item active">
-                                <Link className="nav-link" aria-label="Home" to="/">Home</Link>
+                            <li className="nav-item">
+                                <Link className="nav-link" aria-label="Home" to="/" onClick={this.toggleHandler}>Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" aria-label="About" to="/aboutme">About</Link>
+                                <Link className="nav-link" aria-label="About" to="/aboutme" onClick={this.toggleHandler}>About</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" aria-label="Projects" to="/projects">Projects</Link>
+                                <Link className="nav-link" aria-label="Projects" to="/projects" onClick={this.toggleHandler}>Projects</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" aria-label="Contact" to="/contact">Contact</Link>
+                                <Link className="nav-link" aria-label="Contact" to="/contact" onClick={this.toggleHandler}>Contact</Link>
                             </li>
                             </ul>
                             <span className="navbar-text">
