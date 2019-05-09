@@ -16,8 +16,6 @@ class Nav extends React.Component{
             if(ariaExpanded){
                  document.getElementsByClassName("navbar-toggle")[0].toggle(true);
             }
-
-        
     }
 
     render(){
