@@ -16,7 +16,7 @@ class AboutMe extends React.Component{
                     </div>
                     
                     <div className="your-face fadeIn">
-                        <img className="rounded img-fluid" src="https://instagram.fphx1-2.fna.fbcdn.net/vp/026ed7fe89b952072837f4441d8d5e43/5D48E1A9/t51.2885-19/s320x320/56702428_1188607167981799_5791833827529719808_n.jpg?_nc_ht=instagram.fphx1-2.fna.fbcdn.net" alt=''/>
+                        <img className="rounded img-fluid" src={require('../../images/20190912_105514 (1).jpg')} alt=''/>
                     </div>
 
                     <div className="bio-div fadeIn">

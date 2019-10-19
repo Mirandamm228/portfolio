@@ -1,30 +1,9 @@
 const express = require('express');
 const path = require("path");
-const connectDB = require('./config/db');
 
 const app = express();
 
-// Connect Database
-connectDB();
 
-// Init Middleware
-app.use(express.json({
-  extended: false
-}));
-
-// create a GET route
-app.get('/express_backend', (req, res) => {
-  res.send({
-    express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT'
-  });
-});
-
-//define routes
-//Define Routes
-app.use('/api/admin', require('./routes/api/admin'));
-app.use('/api/auth', require('./routes/api/auth'));
-app.use('/api/profile', require('./routes/api/profile'));
-app.use('/api/posts', require('./routes/api/posts'));
 
 if (process.env.NODE_ENV === "production") {
   // Set static folder

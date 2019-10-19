@@ -25,7 +25,7 @@ class Projects extends React.Component{
     render(){
         return(
             <div className="projectsPage">
-             <div className="Project--deployed-section">
+             {/* <div className="Project--deployed-section">
                     <h1 className="Project--section-header">Deployed Websites</h1>
                     <div className="card deployed-card flipInY">
                         <div className="card-body">
@@ -35,7 +35,7 @@ class Projects extends React.Component{
                         </div>
                     </div>
                 </div>
-                <hr />
+                <hr /> */}
                 <div className="projects-container p-2">
                     <h2 className="Project--other-header">Other Projects</h2>
                     <div className="card-columns">
