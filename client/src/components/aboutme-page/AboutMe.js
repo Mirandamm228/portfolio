@@ -31,7 +31,6 @@ class AboutMe extends React.Component{
                     </div>
 
                     <div className="contact-div fadeIn">
-                        <p>If you are in need of a website to make your business shine or you're missing something from your team... </p>
                         <a href="/contact" aria-label=""><button className="btn btn-primary btn-lg btn-block" aria-label="contact me">Contact Me</button></a>
                     </div>
                     

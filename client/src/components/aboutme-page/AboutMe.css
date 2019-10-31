@@ -9,13 +9,29 @@
     grid-gap: 1em;
 }
 
-.aboutme > .grid > .skills-div {
-    grid-row: 3 / 4;
+.aboutme > .grid > .header-div {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 .aboutme > .grid > .your-face {
-    margin: auto;
+    align-self: center;
     grid-row: 2 / 3;
+}
+
+.aboutme > .grid > .skills-div {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.aboutme > .grid > .contact-div {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.aboutme > .grid > .history-div {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
 }
 
 .aboutme > .grid > .btn-block {
@@ -37,20 +53,63 @@
         grid-row: 1 / 2;
     }
 
+    .aboutme > .grid > .your-face {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    } 
+
     .aboutme > .grid > .skills-div {
-        grid-column: 1 / 3;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        align-self: center;
+    }
+
+    .aboutme > .grid > .contact-div {
+        grid-column: 1 / 2;
         grid-row: 4 / 5;
+    }
+    
+    .aboutme > .grid > .bio-div {
+        grid-column: 2 / 4;
+        grid-row: 2 / 5;
+        align-self: center;
+    }
+
+    .aboutme > .grid > .history-div {
+        grid-column: 1 / 4;
+        grid-row: 5 / 6;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutme {
+        padding: 3em;
+    }
+
+    .aboutme > .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+    }
+
+    .aboutme > .grid > .header-div {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .aboutme > .grid > .skills-div {
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
         align-self: center;
     }
 
     .aboutme > .grid > .your-face {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
-    }
+    } 
 
     .aboutme > .grid > .contact-div {
-        grid-column: 3 / 4;
-        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
     }
     
     .aboutme > .grid > .bio-div {
@@ -61,6 +120,6 @@
 
     .aboutme > .grid > .history-div {
         grid-column: 1 / 4;
-        grid-row: 3 / 4;
+        grid-row: 4 / 5;
     }
 }
