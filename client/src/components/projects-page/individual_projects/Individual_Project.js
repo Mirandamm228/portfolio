@@ -3,7 +3,7 @@ import React from 'react';
 const IndividualProject = (props) => (
     
         <div>
-            <div className="card project-card flipInY">
+            <div className="card project-card bg-secondary flipInY">
                 <div className="card-body">
                 <h3 className="card-title">Name: {props.repo.name}</h3>
                 <p className="card-text">Description: {props.repo.description}</p>

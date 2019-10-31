@@ -2,9 +2,12 @@
    padding: .5em;
 }
 
-.projects-container > div,
 .Project--deployed-section .deployed-card {
    color: #333;
+}
+
+.projects-container > div > .project-card > .card-body {
+   color: #ccc;
 }
 
 .Project--section-header,
