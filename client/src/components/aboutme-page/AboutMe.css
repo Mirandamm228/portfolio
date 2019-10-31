@@ -38,6 +38,18 @@
     width: 100%;
 }
 
+.aboutme > .grid > .contact-div > a > .btn-outline-light,
+.aboutme > .grid > .history-div > a > .btn-outline-light {
+    color: #00cccc !important;
+    border-color: #00cccc !important;
+}
+
+.aboutme > .grid > .contact-div > a > .btn-outline-light:hover,
+.aboutme > .grid > .history-div > a > .btn-outline-light:hover {
+    color: #fff !important;
+    background-color: #00cccc !important;
+}
+
 @media screen and (min-width: 768px) {
     .aboutme {
         padding: 3em;

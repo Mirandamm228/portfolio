@@ -18,6 +18,16 @@
     padding: 1em;
 }
 
+.landingPage-txt > a > .btn-outline-light {
+    color: #00cccc !important;
+    border-color: #00cccc !important;
+}
+
+.landingPage-txt > a > .btn-outline-light:hover {
+    color: #fff !important;
+    background-color: #00cccc !important;
+}
+
 h1, h3 {
     font-size: 2.5em;
 }

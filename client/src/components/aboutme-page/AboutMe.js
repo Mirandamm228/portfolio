@@ -23,7 +23,7 @@ class AboutMe extends React.Component{
 
                     <div className="history-div fadeIn">
                         <p>I've worked with a variety of JavaScript technologies like React, Redux, Node, Express, jQuery, and Angular 7. My interests include learning more programming languages such as Java, Python, and C#. Primarily, I am a front end developer. In 5 years, I want to be full stack and helping small businesses get an edge on the competition against larger companies by providing a quality website.</p>
-                        <a href="/projects" aria-label=""><button className="btn btn-primary btn-lg btn-block" aria-label="View Projects">View Projects</button></a>
+                        <a href="/projects" aria-label=""><button className="btn btn-outline-light btn-lg btn-block" aria-label="View Projects">View Projects</button></a>
                     </div>
 
                     <div className="bio-div fadeIn">
@@ -31,7 +31,7 @@ class AboutMe extends React.Component{
                     </div>
 
                     <div className="contact-div fadeIn">
-                        <a href="/contact" aria-label=""><button className="btn btn-primary btn-lg btn-block" aria-label="contact me">Contact Me</button></a>
+                        <a href="/contact" aria-label=""><button className="btn btn-outline-light btn-lg btn-block" aria-label="contact me">Contact Me</button></a>
                     </div>
                     
                 </div>

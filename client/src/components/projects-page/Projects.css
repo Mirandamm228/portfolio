@@ -19,6 +19,20 @@
    width: 100%;
 }
 
+.fab.fa-github-square,
+.visit-site-link:link {
+   color: #00cccc;
+}
+
+.fab.fa-github-square:hover {
+   color: #009999;
+}
+
+.visit-site-link:hover {
+   color: #009999;  
+   text-decoration: underline;
+}
+
 @media screen and (min-width: 321px) {
    .projectsPage {
       padding: 2em;

@@ -38,6 +38,17 @@
     grid-gap: 1em;
 }
 
+.fab.fa-instagram,
+.fab.fa-linkedin{
+    color: #00cccc;
+}
+
+.fab.fa-instagram:hover,
+.fab.fa-linkedin:hover{
+    color: #009999;
+}
+
+
 @media screen and (min-width: 1064px){
     .contactPage {
         padding: 2em;
