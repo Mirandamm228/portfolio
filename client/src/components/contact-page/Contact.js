@@ -24,7 +24,7 @@ class Contact extends React.Component{
                     <div className="misc-info--div text-center">
                         <p>Please give me a name and a callback number. Let me know how I can help you! </p>
                         <br />
-                        <h5>Hours: 9am - 6pm Arizona Time</h5>
+                        <h5>Available Hours: 3pm - 9pm Arizona Time</h5>
                         <h5>Best method of contact: Email</h5>
                     </div>
                     <div className="contact-info--div text-center">
