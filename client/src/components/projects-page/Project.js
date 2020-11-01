@@ -1,9 +1,11 @@
 import React from 'react';
+// import axios from 'axios';
 
 import IndividualProject from './individual_projects/Individual_Project';
 import './Projects.css';
 
-const API_URL = "https://api.github.com/users/mirandamm228/repos";
+const API_URL_mmm228 = "https://api.github.com/users/mirandamm228/repos";
+const API_URL_webdev = "https://api.github.com/users/miranda-webdev/repos";
 
 class Projects extends React.Component{
     constructor(){
@@ -15,11 +17,20 @@ class Projects extends React.Component{
     }
 
     componentDidMount(){
-        fetch(API_URL)
-        .then(response => response.json())
-        .then(data => this.setState({repos: data}))
+            Promise.all([
+                fetch(API_URL_mmm228),
+                fetch(API_URL_webdev)
+            ])
+        .then((response) => {
+            return Promise.all([response[0].json(), response[1].json()])
+        })
+        .then((data) => {
+            //combine reponse array of each fetch
+            let repos = [...data[0], ...data[1]]
+            
+            this.setState({repos: repos})
+        })
         .catch(err => this.setState({ error: err }));
-        
     }
 
     render(){
@@ -37,7 +48,7 @@ class Projects extends React.Component{
                 </div>
                 <hr /> */}
                 <div className="projects-container p-2">
-                    <h2 className="Project--other-header">Other Projects</h2>
+                    <h1 className="Project--section-header">Ongoing Projects</h1>
                     <div className="card-columns">
                         {this.state.repos.map(repo => (
                            repo.name !== "portfolio" ? <IndividualProject key={repo.id} repo={repo} /> : false
