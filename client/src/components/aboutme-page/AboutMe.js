@@ -11,7 +11,7 @@ class AboutMe extends React.Component{
                     </div>
 
                     <div className="your-face fadeIn">
-                        <img className="rounded img-fluid" src={require('../../images/20190912_105514 (1).jpg')} alt=''/>
+                        <img className="rounded img-fluid" src={require('../../images/proface (4).jpg')} alt=''/>
                     </div>
 
                     <div className="skills-div fadeIn">
