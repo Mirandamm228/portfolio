@@ -31,7 +31,7 @@ class Contact extends React.Component{
                         <div className="inner-grid">
                             <div>
                                 <i className="far fa-envelope"></i>
-                                <h5> miranda.manriquez.dev@gmail.com</h5>
+                                <h5> codingwith.miranda@gmail.com</h5>
                             </div>
                            <div>
                                 <i className="fas fa-mobile-alt"></i>
