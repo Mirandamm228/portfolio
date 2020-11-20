@@ -33,10 +33,6 @@ class Contact extends React.Component{
                                 <i className="far fa-envelope"></i>
                                 <h5> codingwith.miranda@gmail.com</h5>
                             </div>
-                           <div>
-                                <i className="fas fa-mobile-alt"></i>
-                                <h5> (480) 249 - 5816</h5>
-                           </div>
                         </div>
                         <div className="social-media--div">
                             <a href="https://www.instagram.com/miranda_webdev/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram fa-3x m-2"></i></a>
